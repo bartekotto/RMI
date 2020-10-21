@@ -1,0 +1,8 @@
+grant codeBase "file:C:\Users\barte\IdeaProjects\RMI\src\engine\ComputeEngine.java" {
+    permission java.security.AllPermission;
+};
+java -cp c:\home\ann\src;c:\home\ann\public_html\classes\compute.jar
+     -Djava.rmi.server.codebase=file:/c:/home/ann/public_html/classes/compute.jar
+     -Djava.rmi.server.hostname=mycomputer.example.com
+     -Djava.security.policy=server.policy
+        engine.ComputeEngine
